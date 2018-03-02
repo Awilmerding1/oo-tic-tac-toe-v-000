@@ -14,5 +14,6 @@ class TicTacToe
   converted_input = "#{user_input}".to_i
   return converted_input - 1
   end
+  
 
 end
