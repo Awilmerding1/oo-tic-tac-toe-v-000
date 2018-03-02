@@ -47,7 +47,7 @@ def turn
   user_input = gets.strip
   index = input_to_index(user_input)
   until valid_move?(index)
-  return turn(index)
+  return turn
   end
   move(index, token = "X")
   display_board
