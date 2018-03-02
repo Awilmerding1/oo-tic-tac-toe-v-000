@@ -64,7 +64,7 @@ end
 end
 
 
-def current_player(index)
+def current_player
   turn_count(index) % 2 == 0 ? "X" : "O"
 end
 
