@@ -84,5 +84,37 @@ ef won?(index)
     end
   end
   end 
+  
+  def full?(index)
+@board.all? do |full_board|
+full_board == "X" || full_board == "O"
+end
+end
+
+def draw?(index)
+  if full?(index) && !won?(index)
+  return true 
+else false
+end
+end
+
+def over?(board)
+  if full?(board) || won?(board) || draw?(board)
+    return true
+  else false
+ end 
+end
+  
+def winner(board)
+  WIN_COMBINATIONS.find do |game_winner_array|
+  win = board[game_winner_array[0]]
+    if won?(board) == game_winner_array && win == "X"
+      return "X"
+    elsif won?(board) == game_winner_array && win == "O"
+      return "O"
+   end
+ end
+end
+
 
 end
