@@ -115,7 +115,6 @@ def winner
    end
  end
 end
-end
 
 def play
   until over?
@@ -127,5 +126,6 @@ def play
     puts "Congratulations X!"
   elsif draw?
     puts "Cat's Game!"
+end
 end
 end
