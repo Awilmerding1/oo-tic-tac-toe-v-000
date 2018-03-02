@@ -105,7 +105,7 @@ def over?(index)
  end 
 end
   
-def winner(board)
+def winner(index)
   WIN_COMBINATIONS.find do |game_winner_array|
   win = board[game_winner_array[0]]
     if won?(board) == game_winner_array && win == "X"
