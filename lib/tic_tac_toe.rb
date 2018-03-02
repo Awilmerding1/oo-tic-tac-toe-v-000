@@ -53,7 +53,7 @@ def turn(index)
   display_board
 end
 
-def turn_count(index)
+def turn_count
   counter = 0
   @board.each do |turns|
    if turns == "X" || turns == "O"
