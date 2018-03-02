@@ -50,7 +50,7 @@ def turn(index)
   return turn(index)
   end
   move(index, token = "X")
-  display_board(board)
+  display_board
 end
 
 
