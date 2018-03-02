@@ -92,7 +92,7 @@ end
 end
 
 def draw?
-  if full?(index) && !won?
+  if full? && !won?
   return true 
 else false
 end
