@@ -49,7 +49,7 @@ def turn
   until valid_move?(index)
   return turn
   end
-  move(index, token = "X")
+  move(index, current_player)
   display_board
 end
 
