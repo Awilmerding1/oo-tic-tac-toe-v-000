@@ -98,8 +98,8 @@ else false
 end
 end
 
-def over?(board)
-  if full?(board) || won?(board) || draw?(board)
+def over?(index)
+  if full?(index) || won?(index) || draw?(index)
     return true
   else false
  end 
