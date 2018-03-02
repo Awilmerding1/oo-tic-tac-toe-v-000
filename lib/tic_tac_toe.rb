@@ -68,7 +68,7 @@ def current_player
   turn_count % 2 == 0 ? "X" : "O"
 end
 
-def won?(index)
+def won?
   WIN_COMBINATIONS.any? do |win_array|
     win_index_1 = win_array[0]
     win_index_2 = win_array[1]
