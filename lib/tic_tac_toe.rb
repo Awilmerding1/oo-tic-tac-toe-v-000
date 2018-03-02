@@ -42,14 +42,14 @@ end
 end
 
 
-def turn(board) 
+def turn(index) 
   puts "Please enter 1-9:"
   user_input = gets.strip
   index = input_to_index(user_input)
-  until valid_move?(board, index)
-  return turn(board)
+  until valid_move?(index)
+  return turn(index)
   end
-  move(board, index, current_player(board))
+  move(index, current_player(board))
   display_board(board)
 end
 
