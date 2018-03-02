@@ -107,10 +107,10 @@ end
   
 def winner(index)
   WIN_COMBINATIONS.find do |game_winner_array|
-  win = board[game_winner_array[0]]
-    if won?(board) == game_winner_array && win == "X"
+  win = @board[game_winner_array[0]]
+    if won?(index) == game_winner_array && win == "X"
       return "X"
-    elsif won?(board) == game_winner_array && win == "O"
+    elsif won?(index) == game_winner_array && win == "O"
       return "O"
    end
  end
